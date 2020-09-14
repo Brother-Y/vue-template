@@ -11,6 +11,7 @@ export default {
     mounted(){
         this.getResource();
         this.postTest();
+        console.log(this);
     },
     methods:{
         getResource(){

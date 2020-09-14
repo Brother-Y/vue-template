@@ -1,4 +1,4 @@
-import {get,post} from './../utils/requests';
+import {get,post} from './requests';
 
 class Api{
     // 请求音频资源
