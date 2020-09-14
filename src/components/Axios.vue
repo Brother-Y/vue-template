@@ -1,6 +1,8 @@
 <template>
   <div class="axios">
-      hello wrold
+      <div>
+          <p>hello wrold</p>
+      </div>
   </div>
 </template>
 
@@ -25,6 +27,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+@bg-color:yellow;
+div{
+    background-color: @bg-color;
+    p{
+        color: aqua;
+    }
+}
 </style>

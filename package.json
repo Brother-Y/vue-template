@@ -18,6 +18,10 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "axios": "^0.20.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
