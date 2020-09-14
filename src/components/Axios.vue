@@ -28,11 +28,31 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 @bg-color:yellow;
+@width:3rem;
+@height:@width + 1rem;
+
+.bor{
+    border: 1px solid skyblue;
+}
+#bundle(){ // 命名空间
+    .size{
+        font-size: 35px;
+    }
+}
+#color(){ // 映射
+    aqua: aqua;
+    secondary: green;
+}
 div{
     background-color: @bg-color;
+    width: @width;
+    height: @height;
+    .bor(); // 混入
     p{
-        color: aqua;
+        color: #color[secondary];
+        #bundle.size();
     }
 }
 </style>
