@@ -11,9 +11,9 @@ const get = (url,params = {}) =>{
     })
 }
 // post请求
-const post = (url,params = {}) =>{
+const post = (url,data = {}) =>{
     return new Promise((resolve,reject) =>{
-        axios({url,method:'post',params}).then(res =>{
+        axios({url,method:'post',data}).then(res =>{
             resolve(res);
         }).then(err =>{
             reject(err);

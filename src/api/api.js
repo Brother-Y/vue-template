@@ -7,9 +7,9 @@ class Api{
         return get(url,params)
     }
     // post请求测试
-    static getPost(params){
+    static getPost(data){
         const url = 'http://jsonplaceholder.typicode.com/posts'
-        return post(url,params);
+        return post(url,data);
     }
 }
 export default Api

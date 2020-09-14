@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import Api from './../api/api';
 export default {
     mounted(){
         this.getResource();
@@ -13,12 +12,12 @@ export default {
     },
     methods:{
         getResource(){
-            Api.getVideo({id:23,organizationId:1}).then(res =>{
+            this.$api.getVideo({id:23,organizationId:1}).then(res =>{
                 console.log(res);
             })
         },
         postTest(){
-            Api.getPost().then(res =>{
+            this.$api.getPost({userID:101,title:'post'}).then(res =>{
                 console.log(res);
             })
         }
