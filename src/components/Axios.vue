@@ -17,7 +17,7 @@ export default {
             })
         },
         postTest(){
-            this.$api.getPost({userID:101,title:'post'}).then(res =>{
+            this.$api.getPost({userID:101,title:'post',body:'post hello world'}).then(res =>{
                 console.log(res);
             })
         }
