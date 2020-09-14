@@ -2,7 +2,11 @@ import axios from 'axios';
 
 // axios.defaults.baseURL='http://101.200.56.93:8020';
 
-// get请求
+/**
+ * get请求(promise)
+ * @param { String } url 请求地址
+ * @param { Object } params 请求参数
+ */
 const get = (url,params = {}) =>{
     return new Promise((resolve,reject) =>{
         axios({url,method:'get',params}).then(res =>{
@@ -12,7 +16,12 @@ const get = (url,params = {}) =>{
         })
     })
 }
-// post请求
+
+/**
+ * get请求(promise)
+ * @param { String } url 请求地址
+ * @param { Object } data 提交参数
+ */
 const post = (url,data = {}) =>{
     return new Promise((resolve,reject) =>{
         axios({url,method:'post',data}).then(res =>{
