@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL='http://101.200.56.93:8020';
+// axios.defaults.baseURL='http://101.200.56.93:8020';
 
 // get请求
 const get = (url,params = {}) =>{
