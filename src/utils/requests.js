@@ -11,7 +11,7 @@ const get = (url,params = {}) =>{
     return new Promise((resolve,reject) =>{
         axios({url,method:'get',params}).then(res =>{
             resolve(res);
-        }).then(err =>{
+        }).catch(err =>{
             reject(err);
         })
     })
@@ -26,7 +26,7 @@ const post = (url,data = {}) =>{
     return new Promise((resolve,reject) =>{
         axios({url,method:'post',data}).then(res =>{
             resolve(res);
-        }).then(err =>{
+        }).catch(err =>{
             reject(err);
         })
     })
